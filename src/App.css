@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+/* ➡️ MULAI TEMPELKAN KODE CSS BARU DI BAWAH GARIS INI ⬅️ */
+
+/* --- Styling untuk Ikon Identitas Horor --- */
+
+.identity-photo-frame {
+    /* Ukuran bingkai - sesuaikan sesuai kebutuhan */
+    width: 150px;
+    height: 150px;
+    
+    /* Bingkai yang bertema horor/gelap */
+    border: 5px solid #ff0000; /* Garis tebal warna merah darah */
+    border-radius: 50%; /* Membuat bingkai menjadi lingkaran */
+    padding: 5px; 
+    
+    /* Efek bayangan gelap */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.7); 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto; /* Memberi jarak & menengahkan bingkai */
+    overflow: hidden; 
+}
+
+/* Styling untuk Ikon Horor */
+.horror-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+    
+    /* Efek gelap pada gambar */
+    filter: grayscale(100%) brightness(80%); 
+    transition: filter 0.3s ease;
+}
+
+/* Efek saat kursor diarahkan ke ikon */
+.identity-photo-frame:hover .horror-icon {
+    filter: grayscale(0%) brightness(100%); 
+}

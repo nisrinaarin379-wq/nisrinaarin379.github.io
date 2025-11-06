@@ -1,0 +1,58 @@
+.identitas-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  font-family: 'Georgia', serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+.main-title {
+  text-align: center;
+  color: #2c3e50;
+  font-size: 2.2em;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #bdc3c7;
+  padding-bottom: 15px;
+}
+
+.identity-section {
+  background: #f8f9fa;
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.section-title {
+  color: #2c3e50;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  background-color: #fff9c4;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.what-detail {
+  text-align: right;
+  margin-top: 15px;
+  color: #7f8c8d;
+  font-weight: bold;
+}
+
+.section-divider {
+  text-align: center;
+  color: #bdc3c7;
+  margin: 30px 0;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.identity-section p {
+  font-size: 1.1em;
+  text-align: justify;
+}

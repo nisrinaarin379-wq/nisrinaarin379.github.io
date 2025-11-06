@@ -8,22 +8,37 @@ export default function Hero() {
         backgroundImage: "url('https://b.top4top.io/p_3591uolgy1.jpeg')",
       }}
     >
-      {/* Lapisan kabut bergerak */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70" />
+      {/* Gradasi gelap */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70 z-[1]" />
+
+      {/* Kabut tebal bergerak lambat */}
       <motion.div
-        className="absolute inset-0 bg-[url('https://i.pinimg.com/originals/07/f8/88/07f8884d2fa2f6dfbeb6b5dd40d79f28.png')] bg-repeat opacity-30"
+        className="absolute inset-0 z-[2] bg-[url('https://i.ibb.co/7tYxP7W/fog-texture.png')] bg-cover mix-blend-lighten opacity-40"
         animate={{
-          backgroundPosition: ["0px 0px", "200px 100px"],
+          backgroundPosition: ["0px 0px", "300px 200px"],
         }}
         transition={{
           repeat: Infinity,
-          duration: 20,
+          duration: 40,
+          ease: "linear",
+        }}
+      />
+
+      {/* Kabut tipis depan */}
+      <motion.div
+        className="absolute inset-0 z-[3] bg-[url('https://i.ibb.co/9rP5f06/fog2.png')] bg-cover mix-blend-lighten opacity-25"
+        animate={{
+          backgroundPosition: ["200px 100px", "-100px -50px"],
+        }}
+        transition={{
+          repeat: Infinity,
+          duration: 60,
           ease: "linear",
         }}
       />
 
       {/* Konten utama */}
-      <div className="relative z-10 py-20">
+      <div className="relative z-[5] py-20">
         <motion.h1
           className="text-5xl font-bold mb-4 text-white drop-shadow-lg"
           initial={{ opacity: 0, y: 20 }}
